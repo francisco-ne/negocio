@@ -12,4 +12,11 @@ class Producto:
         descuento = self._precio * (porcentaje/100)
         self._precio -= descuento
 
+    def comprobar_stock(self, cantidad):
+        if self.stock + cantidad < 0:
+            return False
+        self.stock +cantidad
+        return True
+            
+
     
